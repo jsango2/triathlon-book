@@ -1,8 +1,13 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import Navbar from "./Navigation/navbar"
 
 const Layout = ({ title, children }) => {
-  return <div className="WrapLayout">{children}</div>
+  return (
+    <div className="WrapLayout">
+      <Navbar />
+      {children}
+    </div>
+  )
 }
 
 export default Layout
