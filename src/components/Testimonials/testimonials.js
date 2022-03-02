@@ -10,10 +10,6 @@ import {
   Rectangle,
   WrapTockice,
 } from "./styles.js"
-import logo from "../../../content/assets/LogoZnak.svg"
-import logo2 from "../../../content/assets/testimonialLogo.svg"
-import photo from "../../../content/assets/testimonialPhoto.png"
-import tockice from "../../../content/assets/tockice.svg"
 
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
