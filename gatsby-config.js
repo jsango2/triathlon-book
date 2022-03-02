@@ -1,15 +1,15 @@
 const { languages, defaultLanguage } = require("./languages")
 module.exports = {
   siteMetadata: {
-    title: `Kolega Dental`,
+    title: `Triathlon book`,
     author: {
       name: `Sutra.hr`,
-      summary: `Kolega Dental`,
+      summary: `From Triathlon to Decision making`,
     },
-    description: `Kolega Dental`,
+    description: `From Triathlon to Decision making`,
     siteUrl: `https://localhost:8003/`,
     social: {
-      twitter: `Kolega Dental`,
+      twitter: `Triathlon book`,
     },
   },
   plugins: [
