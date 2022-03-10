@@ -3,43 +3,44 @@ import styled from "styled-components"
 export const WrapTestimonialsSection = styled.div`
   position: relative;
   width: 100%;
-  height: 720px;
+  height: 528px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 80px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  background: radial-gradient(
+    55.82% 227.16% at 80.36% 44.67%,
+    #a5a5a5 0%,
+    #6d6c6c 100%
+  );
+  @media screen and (max-width: 1000px) {
+    /* padding-left: 145px; */
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 750px) {
+    height: 775px;
   }
 `
 export const TestimonailBox = styled.div`
   position: relative;
-  width: 661px;
-  height: 545px;
-  background: #32bde3;
-  border-radius: 38px;
-  padding-top: 160px;
-  padding-left: 60px;
-  margin-left: 140px;
-  -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+  width: 561px;
+  height: 338px;
+  margin-right: 150px;
+  @media screen and (max-width: 1000px) {
+    margin-left: 145px;
+  }
+  @media screen and (max-width: 750px) {
+    width: 408px;
+
+    margin: 0 auto;
   }
 `
-export const Rectangle = styled.div`
-  height: 427px;
-  width: 550px;
-  border-radius: 20px;
-  background: #32bde3;
-  opacity: 0.06;
-  position: absolute;
-  left: 0;
-  top: -80px;
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
+export const Stars = styled.div`
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  @media screen and (max-width: 750px) {
+    margin: 0 auto 30px auto;
   }
 `
 export const TestimonialLogo = styled.div`
@@ -64,57 +65,84 @@ export const TestimonialLogo2 = styled.div`
     margin-bottom: 1rem; */
   }
 `
-export const WrapTockice = styled.div`
+export const Navodnik = styled.div`
   position: absolute;
-  left: 35%;
-  bottom: 0px;
+  left: 9%;
+  top: 53px;
+  @media screen and (max-width: 1000px) {
+    img {
+      width: 96px;
+    }
+    left: 3%;
+    top: 96px;
+  }
+  @media screen and (max-width: 750px) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+`
+export const NaocaleW = styled.div`
+  position: absolute;
+  left: 4%;
+  bottom: 53px;
+  @media screen and (max-width: 1000px) {
+    /* img {
+      display: none;
+    } */
+    left: -5%;
+    bottom: -56px;
+    z-index: 3;
+  }
+`
+export const PingvinW = styled.div`
+  position: absolute;
+  right: -20px;
+  top: -120px;
+  @media screen and (max-width: 1000px) {
+    img {
+      display: none;
+    }
+  }
+`
+export const OrnamentW = styled.div`
+  position: absolute;
+  right: 30px;
+  top: -50px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
   }
 `
-export const TestimonialPhoto = styled.div`
-  position: relative;
-  width: 474px;
-  height: 451px;
-  border-radius: 20px;
-  overflow: hidden;
-  right: 40px;
-  -webkit-box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  box-shadow: -2px 18px 24px 5px rgba(6, 25, 31, 0.24);
-  @media screen and (max-width: 768px) {
-    /* order: 1;
-    margin-bottom: 1rem; */
-  }
-`
+
 export const Naslov = styled.h3`
-  font-family: Avenir Next;
+  font-family: Roboto;
   font-style: italic;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 120%;
-  /* or 25px */
-  text-transform: uppercase;
-  /* SUNRISE / White */
-  margin-bottom: 15px;
-  color: #ffffff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.6;
+  /* or 137% */
+
+  /* Gray 6 */
+
+  color: #f2f2f2;
+  margin-top: 30px;
   @media screen and (max-width: 768px) {
     /* order: 1;
     margin-bottom: 1rem; */
   }
 `
 export const Text = styled.h4`
-  width: 400px;
-  font-family: Avenir Next;
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 120%;
-  /* or 25px */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 137% */
 
-  /* SUNRISE / White */
+  /* Gray 6 */
 
-  color: #ffffff;
+  color: #f2f2f2;
   /* or 25px */
 
   /* SUNRISE / White */

@@ -2,21 +2,26 @@ import React from "react"
 import {
   WrapTestimonialsSection,
   TestimonailBox,
-  TestimonialLogo,
-  TestimonialLogo2,
+  PingvinW,
+  NaocaleW,
   Naslov,
   Text,
-  TestimonialPhoto,
-  Rectangle,
-  WrapTockice,
+  OrnamentW,
+  Stars,
+  Navodnik,
 } from "./styles.js"
 
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { testimonialList } from "./testimonialList"
+import Star from "../../../content/assets/ActiveStar.png"
+import Navodnici from "../../../content/assets/Navodnici.svg"
+import Pingvin from "../../../content/assets/Pingvin.svg"
+import Ornament from "../../../content/assets/Ornament.svg"
+import Naocale from "../../../content/assets/naocale.svg"
 
-const testimonials = () => {
+const Testimonials = () => {
   console.log(testimonialList)
   const settings = {
     // arrows: true,
@@ -47,31 +52,38 @@ const testimonials = () => {
   }
   return (
     <WrapTestimonialsSection>
-      <Rectangle />
-      <TestimonialLogo2>
-        <img src={logo2} alt="logo2" />
-      </TestimonialLogo2>
-      <WrapTockice>
-        <img src={tockice} alt="dots" />
-      </WrapTockice>
+      <Navodnik>
+        <img src={Navodnici} alt="Quote" />
+      </Navodnik>
+      <NaocaleW>
+        <img src={Naocale} alt="Quote" />
+      </NaocaleW>
+      <PingvinW>
+        <img src={Pingvin} alt="Quote" />
+      </PingvinW>
+      <OrnamentW>
+        <img src={Ornament} alt="Quote" />
+      </OrnamentW>
       <TestimonailBox>
+        <Stars>
+          <img src={Star} alt="star" width="20px" />
+          <img src={Star} alt="star" width="20px" />
+          <img src={Star} alt="star" width="20px" />
+          <img src={Star} alt="star" width="20px" />
+          <img src={Star} alt="star" width="20px" />
+        </Stars>
         <Slider {...settings}>
           {testimonialList.map(testimonial => (
             <>
-              <Naslov>{testimonial.ime}</Naslov>
               <Text>{testimonial.testimonial}</Text>
+              <Naslov>{testimonial.ime}</Naslov>
             </>
           ))}
         </Slider>
-        <TestimonialLogo>
-          <img src={logo} alt="logo" />
-        </TestimonialLogo>
+        {/* <TestimonialLogo></TestimonialLogo> */}
       </TestimonailBox>
-      <TestimonialPhoto>
-        <img src={photo} alt="logo" />
-      </TestimonialPhoto>
     </WrapTestimonialsSection>
   )
 }
 
-export default testimonials
+export default Testimonials
