@@ -320,3 +320,9 @@ a:focus {
   text-align: left !important;
   bottom: -50px !important;
 }
+
+/* @media only screen and (max-width: 440px) {
+  .slick-dots {
+    bottom: px !important;
+  }
+} */

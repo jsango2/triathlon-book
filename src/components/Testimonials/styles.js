@@ -19,6 +19,9 @@ export const WrapTestimonialsSection = styled.div`
   @media screen and (max-width: 750px) {
     height: 775px;
   }
+  @media screen and (max-width: 440px) {
+    height: 887px;
+  }
 `
 export const TestimonailBox = styled.div`
   position: relative;
@@ -30,8 +33,10 @@ export const TestimonailBox = styled.div`
   }
   @media screen and (max-width: 750px) {
     width: 408px;
-
     margin: 0 auto;
+  }
+  @media screen and (max-width: 440px) {
+    width: 85%;
   }
 `
 export const Stars = styled.div`

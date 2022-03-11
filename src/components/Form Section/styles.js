@@ -50,6 +50,9 @@ export const WrapText = styled.div`
   @media screen and (max-width: 750px) {
     margin-top: 50px;
   }
+  @media screen and (max-width: 440px) {
+    width: 85%;
+  }
 `
 export const BookImage = styled.div`
   position: relative;
@@ -81,6 +84,13 @@ export const BookImage = styled.div`
     img:nth-child(2) {
       bottom: 0;
       left: 20px;
+    }
+  }
+  @media screen and (max-width: 440px) {
+    img:nth-child(2) {
+      bottom: 0;
+      left: 22%;
+      transform: translate(4%);
     }
   }
 `
@@ -126,10 +136,8 @@ export const FormTitle = styled.h1`
   color: #2c2738;
   /* padding-left: 130px;
   padding-top: 96px; */
-  @media screen and (max-width: 700px) {
-    /* padding-left: 30px; */
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 440px) {
+    font-size: 28px;
   }
 `
 export const FormTitleMobile = styled(FormTitle)`
@@ -255,7 +263,7 @@ export const TextBox = styled.div`
     /* identical to box height, or 167% */
     cursor: pointer;
     color: #ffffff;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
   }
 
   @media screen and (max-width: 700px) {
@@ -325,10 +333,8 @@ export const Button = styled.button`
   cursor: pointer;
   color: #ffffff;
   margin: 40px auto 0 auto;
-  @media screen and (max-width: 700px) {
-    /* padding-left: 30px; */
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (min-width: 750px) {
+    display: none;
   }
 `
 export const SupermanMobile = styled.div`

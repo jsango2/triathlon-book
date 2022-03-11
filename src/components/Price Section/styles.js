@@ -55,17 +55,18 @@ export const WrapText = styled.div`
   @media screen and (max-width: 750px) {
     width: 404px;
   }
+  @media screen and (max-width: 440px) {
+    width: 85vw;
+  }
 `
 export const BookImage = styled.div`
   position: relative;
   z-index: 2;
   /* padding-left: 130px;
   padding-top: 96px; */
-  @media screen and (max-width: 1000px) {
-    /* left: -100px; */
-    /* padding-left: 30px; */
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 440px) {
+    left: 50%;
+    transform: translate(-66%);
   }
 `
 export const Line = styled.div`
@@ -111,10 +112,8 @@ export const BoxWrap = styled.div`
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  @media screen and (max-width: 700px) {
-    /* padding-left: 30px; */
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 440px) {
+    width: 135px;
   }
 `
 export const Title = styled.h1`

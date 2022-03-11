@@ -47,6 +47,9 @@ export const WrapText = styled.div`
   @media screen and (max-width: 750px) {
     margin-top: 50px;
   }
+  @media screen and (max-width: 440px) {
+    width: 85%;
+  }
 `
 export const BookImage = styled.div`
   position: relative;
