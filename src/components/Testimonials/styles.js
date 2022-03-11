@@ -6,7 +6,7 @@ export const WrapTestimonialsSection = styled.div`
   height: 528px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background: radial-gradient(
     55.82% 227.16% at 80.36% 44.67%,
     #a5a5a5 0%,
@@ -22,6 +22,9 @@ export const WrapTestimonialsSection = styled.div`
   @media screen and (max-width: 440px) {
     height: 887px;
   }
+  @media screen and (max-width: 380px) {
+    height: 1015px;
+  }
 `
 export const TestimonailBox = styled.div`
   position: relative;
@@ -30,10 +33,11 @@ export const TestimonailBox = styled.div`
   margin-right: 150px;
   @media screen and (max-width: 1000px) {
     margin-left: 145px;
+    margin-top: 100px;
   }
   @media screen and (max-width: 750px) {
     width: 408px;
-    margin: 0 auto;
+    margin: 220px auto 0 auto;
   }
   @media screen and (max-width: 440px) {
     width: 85%;
