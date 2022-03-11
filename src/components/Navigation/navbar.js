@@ -11,7 +11,6 @@ const Navbar = () => {
 
   return (
     <NavbarWrap>
-      {/* <img src={Logo} width="398px" alt="" /> */}
       <LinkWrap>
         <SingleLink>
           <Veza
@@ -22,7 +21,7 @@ const Navbar = () => {
             offset={50}
             duration={1800}
           >
-            <Link activeClassName="activeLink">TESTIMONIALS</Link>
+            <div>TESTIMONIALS</div>
           </Veza>
         </SingleLink>
         <SingleLink>
@@ -34,7 +33,7 @@ const Navbar = () => {
             offset={50}
             duration={1800}
           >
-            <Link activeClassName="activeLink">AUTHOR</Link>
+            <div>AUTHOR</div>
           </Veza>
         </SingleLink>
         <SingleLink>
@@ -47,7 +46,7 @@ const Navbar = () => {
               offset={-40}
               duration={1800}
             >
-              <Link activeClassName="activeLink">ORDER BOOK</Link>
+              <div>ORDER BOOK</div>
             </Veza>
           ) : (
             <a href="mailto:media@applythemethod.com?subject=Book order">

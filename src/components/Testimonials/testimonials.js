@@ -74,10 +74,10 @@ const Testimonials = () => {
         </Stars>
         <Slider {...settings}>
           {testimonialList.map(testimonial => (
-            <>
+            <React.Fragment key={testimonial.ime}>
               <Text>{testimonial.testimonial}</Text>
               <Naslov>{testimonial.ime}</Naslov>
-            </>
+            </React.Fragment>
           ))}
         </Slider>
         {/* <TestimonialLogo></TestimonialLogo> */}

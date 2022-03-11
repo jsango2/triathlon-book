@@ -18,7 +18,7 @@ const Form = () => {
         >
           <input type="hidden" name="Contact_Form" value="contact" />
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input type="text" name="Name" />
           </div>
           <div
@@ -28,7 +28,7 @@ const Form = () => {
               marginTop: "25px",
             }}
           >
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input type="email" name="email" />
           </div>
           <div
@@ -39,7 +39,7 @@ const Form = () => {
               marginBottom: "35px",
             }}
           >
-            <label for="message">Message or Book order</label>
+            <label htmlFor="message">Message or Book order</label>
             <textarea
               name="message"
               placeholder="Write something.."

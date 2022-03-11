@@ -165,7 +165,7 @@ export const SubTitle = styled.h1`
     margin-bottom: 1rem; */
   }
 `
-export const Text = styled.p`
+export const Text = styled.div`
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;

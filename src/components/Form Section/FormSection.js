@@ -1,5 +1,4 @@
 import React from "react"
-import Navbar from "../Navigation/navbar"
 import {
   WrapFormSection,
   WrapContent,
@@ -15,10 +14,7 @@ import {
   Button,
 } from "./styles.js"
 import Robbie from "../../../content/assets/Robbie.png"
-import Fb from "../../../content/assets/facebook.svg"
-import Ig from "../../../content/assets/instagram.svg"
-import Ln from "../../../content/assets/linkedin.svg"
-import Web from "../../../content/assets/webmail.svg"
+
 import Potpis from "../../../content/assets/potpis.svg"
 import KnjigaForm from "../../../content/assets/KnjigaForm.png"
 import Form from "./Form"

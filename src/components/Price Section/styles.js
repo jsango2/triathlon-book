@@ -161,7 +161,7 @@ export const Text = styled.p`
     text-align: center;
   }
 `
-export const Raymond = styled.p`
+export const Raymond = styled.div`
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
