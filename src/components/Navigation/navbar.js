@@ -3,19 +3,52 @@ import React from "react"
 import { Link } from "gatsby"
 import { NavbarWrap, LogoWrap, LinkWrap, SingleLink } from "./styles.js"
 import { Links } from "./links"
+import { Link as Veza } from "react-scroll"
+import useWindowSize from "../helper/usewindowsize"
 
 const Navbar = () => {
+  const size = useWindowSize()
+
   return (
     <NavbarWrap>
       {/* <img src={Logo} width="398px" alt="" /> */}
       <LinkWrap>
-        {Links.map(e => (
-          <SingleLink key={e.link}>
-            <Link to={e.link} activeClassName="activeLink">
-              {e.veza}
-            </Link>
-          </SingleLink>
-        ))}
+        <SingleLink>
+          <Veza
+            activeClass="active"
+            to="testimonial"
+            spy={true}
+            smooth="easeInOutCubic"
+            offset={50}
+            duration={1800}
+          >
+            <Link activeClassName="activeLink">TESTIMONIALS</Link>
+          </Veza>
+        </SingleLink>
+        <SingleLink>
+          <Veza
+            activeClass="active"
+            to="author"
+            spy={true}
+            smooth="easeInOutCubic"
+            offset={50}
+            duration={1800}
+          >
+            <Link activeClassName="activeLink">AUTHOR</Link>
+          </Veza>
+        </SingleLink>
+        <SingleLink>
+          <Veza
+            activeClass="active"
+            to={size.width > 750 ? "order" : "orderMobile"}
+            spy={true}
+            smooth="easeInOutCubic"
+            offset={-40}
+            duration={1800}
+          >
+            <Link activeClassName="activeLink">ORDER BOOK</Link>
+          </Veza>
+        </SingleLink>
       </LinkWrap>
     </NavbarWrap>
   )

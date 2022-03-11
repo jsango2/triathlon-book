@@ -32,6 +32,7 @@ export const Up = styled.div`
   /* border-radius: 100%/0 0 100px 100px; */
   @media screen and (max-width: 750px) {
     height: auto;
+    padding-top: 60px;
   }
 `
 
@@ -40,10 +41,10 @@ export const WrapBook = styled.div`
   img {
     width: 776px;
   }
-  @media screen and (max-width: 700px) {
-    /* padding-left: 30px; */
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 440px) {
+    img {
+      width: 575px;
+    }
   }
 `
 export const MedalsWrap = styled.div`
@@ -91,10 +92,10 @@ export const Elipse = styled.div`
   transform: rotate(180deg);
   @media screen and (max-width: 750px) {
     width: 151%;
-    top: -142px;
+    top: -95px;
   }
-  @media screen and (max-width: 420px) {
-    top: -127px;
+  @media screen and (max-width: 440px) {
+    top: -80px;
   }
 `
 export const Elipse2 = styled.div`

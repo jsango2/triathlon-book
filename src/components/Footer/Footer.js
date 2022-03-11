@@ -34,7 +34,8 @@ const Footer = () => {
         </Social>
         <Divider />
         <Copyright>
-          © 2022 BEYOND THE METHOD / All Rights Reserved / Web design SUTRA
+          © 2022 BEYOND THE METHOD / All Rights Reserved / Web design{" "}
+          <strong>SUTRA</strong>
         </Copyright>
       </ContentWrap>
     </FooterWrap>

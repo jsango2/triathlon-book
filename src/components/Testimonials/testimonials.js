@@ -51,7 +51,7 @@ const Testimonials = () => {
     // ],
   }
   return (
-    <WrapTestimonialsSection>
+    <WrapTestimonialsSection id="testimonial">
       <Navodnik>
         <img src={Navodnici} alt="Quote" />
       </Navodnik>

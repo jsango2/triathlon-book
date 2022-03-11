@@ -1,6 +1,5 @@
 export const Links = [
-  { veza: "Home", link: "/" },
-  { veza: "Testimonials", link: "/" },
-  { veza: "Author", link: "/" },
-  { veza: "Order book", link: "/" },
+  { veza: "Testimonials", link: "testimonial" },
+  { veza: "Author", link: "author" },
+  { veza: "Order book", link: "order" },
 ]

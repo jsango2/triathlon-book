@@ -1,7 +1,7 @@
 const { languages, defaultLanguage } = require("./languages")
 module.exports = {
   siteMetadata: {
-    title: `Triathlon book`,
+    title: `From Triathlon to Decision making`,
     author: {
       name: `Sutra.hr`,
       summary: `From Triathlon to Decision making`,
@@ -69,7 +69,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Lato\:400`, `Roboto\:400, 500,600, 700`, `IBM Plex Sans\:500`],
+        fonts: [
+          `Lato\:400`,
+          `Roboto\:400, 500,600, 700`,
+          `IBM Plex Sans\:500`,
+          `Work Sans\:400`,
+        ],
         display: "swap",
       },
     },
@@ -113,15 +118,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `From triathlon to decision making`,
+        short_name: `From triathlon to decision making`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,

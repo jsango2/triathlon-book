@@ -31,9 +31,10 @@ export const GalleryWrap = styled.div`
     object-fit: cover;
   }
 
-  @media screen and (max-width: 700px) {
-    /* padding-left: 30px; */
-    /* order: 1;
-    margin-bottom: 1rem; */
+  @media screen and (max-width: 750px) {
+    height: 550px;
+  }
+  @media screen and (max-width: 440px) {
+    height: 300px;
   }
 `

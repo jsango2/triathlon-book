@@ -62,7 +62,7 @@ export const Title = styled.h1`
 `
 export const SubTitle = styled.p`
   position: relative;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
@@ -80,7 +80,7 @@ export const SubTitle = styled.p`
   @media screen and (max-width: 750px) {
     margin-top: 45px;
     margin-bottom: 25px;
-    width: 70%;
+    width: 80%;
   }
 `
 export const Social = styled.div`
@@ -113,7 +113,7 @@ export const Divider = styled.div`
 `
 export const Copyright = styled.div`
   position: relative;
-  font-family: Work Sans;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -126,6 +126,6 @@ export const Copyright = styled.div`
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
-    width: 65%;
+    width: 85%;
   }
 `

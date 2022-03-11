@@ -26,7 +26,7 @@ import SUperman from "../../../content/assets/FATMAN.svg"
 
 const FormSection = () => {
   return (
-    <WrapFormSection>
+    <WrapFormSection id="author">
       <WrapContent>
         {" "}
         <WrapText>
@@ -67,7 +67,7 @@ const FormSection = () => {
           <img src={Potpis} alt="Robbie" width="250px" />
         </BookImage>
       </WrapContent>
-      <SupermanMobile>
+      <SupermanMobile id="orderMobile">
         <img src={SUperman} alt="superman mobile" width={224} />
       </SupermanMobile>
       <FormTitleMobile>Contact us / Order book</FormTitleMobile>

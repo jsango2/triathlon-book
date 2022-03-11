@@ -31,6 +31,8 @@ export const TestimonailBox = styled.div`
   width: 561px;
   height: 338px;
   margin-right: 150px;
+  margin-top: 100px;
+
   @media screen and (max-width: 1000px) {
     margin-left: 145px;
     margin-top: 100px;

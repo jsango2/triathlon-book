@@ -84,7 +84,7 @@ export const Line = styled.div`
 `
 export const LineUnderTitle = styled.div`
   position: relative;
-  margin: 55px auto 25px auto;
+  margin: 75px auto 25px auto;
   height: 2px;
   width: 243px;
   background-color: red;
@@ -112,6 +112,14 @@ export const BoxWrap = styled.div`
   color: white;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
+  @media screen and (max-width: 600px) {
+    /* right: ${props => props.right}; */
+    right: calc(${props => props.right} + 70px);
+  }
+  @media screen and (max-width: 440px) {
+    /* right: ${props => props.right}; */
+    right: calc(${props => props.right} + 50px);
+  }
   @media screen and (max-width: 440px) {
     width: 135px;
   }

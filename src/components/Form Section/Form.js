@@ -4,7 +4,7 @@ import SUperman from "../../../content/assets/FATMAN.svg"
 
 const Form = () => {
   return (
-    <FormBox>
+    <FormBox id="order">
       <Superman>
         <img src={SUperman} alt="" />
       </Superman>

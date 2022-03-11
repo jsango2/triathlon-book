@@ -33,7 +33,10 @@ export const LinkWrap = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 750px) {
-    width: 420px;
+    width: 340px;
+  }
+  @media screen and (max-width: 370px) {
+    width: 300px;
   }
 `
 export const SingleLink = styled.div`
@@ -66,5 +69,11 @@ export const SingleLink = styled.div`
       margin: 0 0;
       cursor: pointer;
     }
+  }
+  @media screen and (max-width: 370px) {
+    margin: 0 5px;
+  }
+  @media screen and (max-width: 330px) {
+    margin: 0 2 px;
   }
 `
