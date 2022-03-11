@@ -173,6 +173,7 @@ export const Text = styled.p`
   line-height: 22px;
   /* or 137% */
   margin-top: 35px;
+  margin-bottom: 60px;
   /* Gray 6 */
 
   color: #f2f2f2;
@@ -289,16 +290,12 @@ export const NYT = styled.p`
   }
 `
 export const SocialWrap = styled.div`
-  margin-top: 65px;
-  width: 157px;
-  height: 56px;
-  display: flex;
-  justify-content: space-between;
-  img {
-    cursor: pointer;
+  div > img:last-child {
+    display: none;
   }
   @media screen and (max-width: 750px) {
-    margin: 45px auto 0 auto;
+    display: flex;
+    justify-content: center;
   }
 `
 export const Superman = styled.div`

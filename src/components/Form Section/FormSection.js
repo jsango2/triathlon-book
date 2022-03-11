@@ -23,6 +23,7 @@ import Potpis from "../../../content/assets/potpis.svg"
 import KnjigaForm from "../../../content/assets/KnjigaForm.png"
 import Form from "./Form"
 import SUperman from "../../../content/assets/FATMAN.svg"
+import SocialComp from "../socialIcons/social"
 
 const FormSection = () => {
   return (
@@ -54,12 +55,8 @@ const FormSection = () => {
               running as well as pizzas!
             </div>
           </Text>
-
           <SocialWrap>
-            <img src={Fb} alt="Book" width="25px" />
-            <img src={Ig} alt="Book" width="25px" />
-            <img src={Ln} alt="Book" width="25px" />
-            <img src={Web} alt="Book" width="25px" />
+            <SocialComp />
           </SocialWrap>
         </WrapText>
         <BookImage>

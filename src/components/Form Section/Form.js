@@ -11,7 +11,12 @@ const Form = () => {
       <TextBox>
         <FormTitle>Contact us / Order book</FormTitle>
         <SubTitle>In general, we reply within 24-28 hours.</SubTitle>
-        <form>
+        <form
+          name="contact"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="Contact_Form" value="contact" />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <label for="name">Name</label>
             <input type="text" name="Name" />

@@ -121,7 +121,7 @@ export const Text = styled.p`
     text-align: center;
   }
 `
-export const Button = styled.div`
+export const Button = styled.a`
   width: 194px;
   height: 56px;
   position: relative;
@@ -144,7 +144,7 @@ export const Button = styled.div`
   color: #ebf4f8;
   padding: 0 23px;
   transition: all 0.3s ease-out;
-
+  text-decoration: none;
   /* padding-left: 130px;
   padding-top: 96px; */
   &:hover {

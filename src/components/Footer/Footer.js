@@ -8,11 +8,8 @@ import {
   Copyright,
   Divider,
 } from "./styles.js"
-import Fb from "../../../content/assets/facebook.svg"
-import Ig from "../../../content/assets/instagram.svg"
-import Ln from "../../../content/assets/linkedin.svg"
-import Web from "../../../content/assets/webmail.svg"
-import Cart from "../../../content/assets/carticon.svg"
+
+import SocialComp from "../socialIcons/social.js"
 
 const Footer = () => {
   return (
@@ -25,13 +22,7 @@ const Footer = () => {
         <SubTitle>
           From Triathlon to Decision Making: The Method to Success
         </SubTitle>
-        <Social>
-          <img src={Fb} alt="Facebook" width="25px" />
-          <img src={Ig} alt="Instagram" width="25px" />
-          <img src={Ln} alt="Linkedin" width="25px" />
-          <img src={Web} alt="WebMail" width="25px" />
-          <img src={Cart} alt="Cart" width="25px" />
-        </Social>
+        <SocialComp />
         <Divider />
         <Copyright>
           © 2022 BEYOND THE METHOD / All Rights Reserved / Web design{" "}

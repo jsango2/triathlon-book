@@ -38,16 +38,22 @@ const Navbar = () => {
           </Veza>
         </SingleLink>
         <SingleLink>
-          <Veza
-            activeClass="active"
-            to={size.width > 750 ? "order" : "orderMobile"}
-            spy={true}
-            smooth="easeInOutCubic"
-            offset={-40}
-            duration={1800}
-          >
-            <Link activeClassName="activeLink">ORDER BOOK</Link>
-          </Veza>
+          {size.width > 750 ? (
+            <Veza
+              activeClass="active"
+              to="order"
+              spy={true}
+              smooth="easeInOutCubic"
+              offset={-40}
+              duration={1800}
+            >
+              <Link activeClassName="activeLink">ORDER BOOK</Link>
+            </Veza>
+          ) : (
+            <a href="mailto:media@applythemethod.com?subject=Book order">
+              ORDER BOOK
+            </a>
+          )}
         </SingleLink>
       </LinkWrap>
     </NavbarWrap>

@@ -16,8 +16,11 @@ import {
 import Book from "../../../content/assets/OpenBook.png"
 import Cart from "../../../content/assets/cart.svg"
 import PriceBox from "./priceBox"
+import { Link as Veza } from "react-scroll"
+import useWindowSize from "../helper/usewindowsize"
 
 const Price = () => {
+  const size = useWindowSize()
   return (
     <PriceWrap>
       <WrapContent>
@@ -49,10 +52,26 @@ const Price = () => {
             <br />
             <NYT> New York Times Bestselling Author</NYT>
           </Raymond>
-          <Button>
-            <div>ORDER BOOK</div>
-            <img src={Cart} alt="Book" width="20px" />
-          </Button>
+          {size.width > 750 ? (
+            <Veza
+              activeClass="active"
+              to="order"
+              spy={true}
+              smooth="easeInOutCubic"
+              offset={-50}
+              duration={1800}
+            >
+              <Button>
+                <div>ORDER BOOK</div>
+                <img src={Cart} alt="Book" width="20px" />
+              </Button>
+            </Veza>
+          ) : (
+            <Button href="mailto:media@applythemethod.com?subject=Book order">
+              <div>ORDER BOOK</div>
+              <img src={Cart} alt="Book" width="20px" />
+            </Button>
+          )}
         </WrapText>
       </WrapContent>
     </PriceWrap>

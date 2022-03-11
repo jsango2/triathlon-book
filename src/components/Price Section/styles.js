@@ -140,6 +140,7 @@ export const Title = styled.h1`
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
     text-align: center;
+    font-size: 28px;
   }
 `
 export const Text = styled.p`
@@ -189,7 +190,7 @@ export const NYT = styled.p`
     text-align: center;
   }
 `
-export const Button = styled.div`
+export const Button = styled.a`
   width: 194px;
   height: 56px;
   position: relative;
@@ -214,7 +215,7 @@ export const Button = styled.div`
   /* padding-left: 130px;
   padding-top: 96px; */
   transition: all 0.3s ease-out;
-
+  text-decoration: none;
   &:hover {
     background: #d6d6d6;
   }
