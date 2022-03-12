@@ -2,6 +2,7 @@ const { languages, defaultLanguage } = require("./languages")
 module.exports = {
   siteMetadata: {
     title: `From Triathlon to Decision making`,
+    image: `/ogimage.png`,
     author: {
       name: `Sutra.hr`,
       summary: `From Triathlon to Decision making`,
