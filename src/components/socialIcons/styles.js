@@ -6,6 +6,7 @@ export const Social = styled.div`
   width: 230px;
   height: 50px;
   justify-content: space-between;
+  align-items: center;
   img {
     cursor: pointer;
   }

@@ -6,7 +6,9 @@ module.exports = {
       name: `Sutra.hr`,
       summary: `From Triathlon to Decision making`,
     },
-    description: `From Triathlon to Decision making`,
+    description: `Over a long and fruitful business career, Roberto has explored the
+    practices of triathlon training and how they positively impact the
+    business processes.`,
     siteUrl: `https://localhost:8003/`,
     social: {
       twitter: `Triathlon book`,

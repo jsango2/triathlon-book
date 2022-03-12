@@ -9,11 +9,20 @@ import { Social } from "./styles.js"
 const SocialComp = () => {
   return (
     <Social>
-      <img src={Fb} alt="Facebook" width="25px" />
-      <img src={Ig} alt="Instagram" width="25px" />
-      <img src={Ln} alt="Linkedin" width="25px" />
-      <img src={Web} alt="WebMail" width="25px" />
-      <img src={Cart} alt="Cart" width="25px" />
+      <a href="https://www.facebook.com/carfagno">
+        <img src={Fb} alt="Facebook" width="25px" />
+      </a>
+      <a href="https://instagram.com/tri_robbie?utm_medium=copy_link">
+        <img src={Ig} alt="Instagram" width="25px" />
+      </a>
+      <a href="ttps://www.linkedin.com/in/carfagno6471/?originalSubdomain=sg">
+        {" "}
+        <img src={Ln} alt="Linkedin" width="25px" />
+      </a>
+      <a href="mailto:media@applythemethod.com">
+        <img src={Web} alt="WebMail" width="25px" />
+      </a>
+      {/* <img src={Cart} alt="Cart" width="25px" /> */}
     </Social>
   )
 }

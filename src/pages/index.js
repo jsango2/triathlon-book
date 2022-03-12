@@ -17,7 +17,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <Seo title="Home" />
+      <Seo title="From Triathlon to Decision making" />
       <Hero />
       <Price />
       <FormSection />
