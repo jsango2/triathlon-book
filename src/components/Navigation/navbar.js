@@ -20,7 +20,7 @@ const Navbar = () => {
             offset={50}
             duration={1800}
           >
-            <div>TESTIMONIALS</div>
+            TESTIMONIALS
           </Veza>
         </SingleLink>
         <SingleLink>
@@ -32,7 +32,7 @@ const Navbar = () => {
             offset={50}
             duration={1800}
           >
-            <div>AUTHOR</div>
+            AUTHOR
           </Veza>
         </SingleLink>
         <SingleLink>

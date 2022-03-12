@@ -51,7 +51,7 @@ export const SingleLink = styled.div`
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    margin: 0 0;
+    /* margin: 0 0; */
     cursor: pointer;
   }
   &:hover {
