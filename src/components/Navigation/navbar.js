@@ -1,8 +1,7 @@
 import React from "react"
 // import Logo from "../../../content/assets/LogoNavbar.svg"
-import { Link } from "gatsby"
-import { NavbarWrap, LogoWrap, LinkWrap, SingleLink } from "./styles.js"
-import { Links } from "./links"
+// import { Link } from "gatsby"
+import { NavbarWrap, LinkWrap, SingleLink } from "./styles.js"
 import { Link as Veza } from "react-scroll"
 import useWindowSize from "../helper/usewindowsize"
 

@@ -4,7 +4,6 @@ import {
   ContentWrap,
   Title,
   SubTitle,
-  Social,
   Copyright,
   Divider,
 } from "./styles.js"

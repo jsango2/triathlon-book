@@ -1,5 +1,4 @@
 import React from "react"
-import Navbar from "../Navigation/navbar"
 import {
   PriceWrap,
   WrapContent,
@@ -10,7 +9,7 @@ import {
   Button,
   Line,
   Raymond,
-  NYT,
+  Nyt,
   LineUnderTitle,
 } from "./styles.js"
 import Book from "../../../content/assets/OpenBook.png"
@@ -50,7 +49,7 @@ const Price = () => {
           <Raymond>
             Raymond Aaron
             <br />
-            <NYT> New York Times Bestselling Author</NYT>
+            <Nyt> New York Times Bestselling Author</Nyt>
           </Raymond>
           {size.width > 750 ? (
             <Veza

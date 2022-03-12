@@ -20,8 +20,11 @@ import KnjigaForm from "../../../content/assets/KnjigaForm.png"
 import Form from "./Form"
 import SUperman from "../../../content/assets/FATMAN.svg"
 import SocialComp from "../socialIcons/social"
+import { Link as Veza } from "react-scroll"
+import useWindowSize from "../helper/usewindowsize"
 
 const FormSection = () => {
+  const size = useWindowSize()
   return (
     <WrapFormSection id="author">
       <WrapContent>
@@ -43,18 +46,17 @@ const FormSection = () => {
             from a completely different background. He went on to successfully
             found Asiaccess (www.asiaccess.com), a company specialized in
             outsourced sales and marketing services in Asia for non-Asian
-            companies.{" "}
-            <div style={{ marginTop: "20px" }}>
-              {" "}
-              Now an acclaimed public speaker, he happily shares his method for
-              success while still enjoying his passion for swimming, biking and
-              running as well as pizzas!
-            </div>
+            companies. <br />
+            <br />
+            <br />
+            Now an acclaimed public speaker, he happily shares his method for
+            success while still enjoying his passion for swimming, biking and
+            running as well as pizzas!
           </Text>
           <SocialWrap>
             <SocialComp />
           </SocialWrap>
-        </WrapText>
+        </WrapText>{" "}
         <BookImage>
           <img src={Robbie} alt="Robbie" width="650px" />
           <img src={Potpis} alt="Robbie" width="250px" />
@@ -64,7 +66,25 @@ const FormSection = () => {
         <img src={SUperman} alt="superman mobile" width={224} />
       </SupermanMobile>
       <FormTitleMobile>Contact us / Order book</FormTitleMobile>
-      <Button>Send Message / Order</Button>
+      {size.width > 750 ? (
+        <Veza
+          activeClass="active"
+          to="order"
+          spy={true}
+          smooth="easeInOutCubic"
+          offset={-50}
+          duration={1800}
+        >
+          <Button>
+            <div>Send message / Order</div>
+          </Button>
+        </Veza>
+      ) : (
+        <Button href="mailto:media@applythemethod.com?subject=Book order">
+          <div>Send message / Order</div>
+        </Button>
+      )}
+
       <FormLower>
         <Form />
         <img src={KnjigaForm} alt="Book" width="455px" />

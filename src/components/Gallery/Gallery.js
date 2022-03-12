@@ -1,5 +1,5 @@
 import React from "react"
-import { GalleryWrap, Photo } from "./styles.js"
+import { GalleryWrap } from "./styles.js"
 import p1 from "../../../content/assets/foto1.png"
 import p2 from "../../../content/assets/foto2.png"
 import p3 from "../../../content/assets/foto3.png"

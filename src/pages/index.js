@@ -10,7 +10,6 @@ import Testimonials from "../components/Testimonials/testimonials"
 import Download from "../components/Download/Download"
 import Gallery from "../components/Gallery/Gallery"
 import Featured from "../components/Featured/Featured"
-import GalleryDown from "../components/Gallery2/GalleryDown"
 import Footer from "../components/Footer/Footer"
 
 const BlogIndex = ({ data }) => {

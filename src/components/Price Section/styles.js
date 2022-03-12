@@ -176,7 +176,7 @@ export const Raymond = styled.div`
     text-align: center;
   }
 `
-export const NYT = styled.p`
+export const Nyt = styled.p`
   font-style: italic;
   font-weight: normal;
   font-size: 13px;

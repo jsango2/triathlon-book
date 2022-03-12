@@ -290,6 +290,8 @@ export const NYT = styled.p`
   }
 `
 export const SocialWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
   div > img:last-child {
     display: none;
   }
@@ -308,7 +310,7 @@ export const Superman = styled.div`
     margin-bottom: 1rem; */
   }
 `
-export const Button = styled.button`
+export const Button = styled.a`
   position: relative;
   width: 218px;
   height: 56px;
@@ -317,8 +319,11 @@ export const Button = styled.button`
   box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08),
     0px 4px 8px rgba(44, 39, 56, 0.08);
   border-radius: 6px;
-
+  text-decoration: none;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Blue shadow */
   border: none;
   font-family: "Roboto", sans-serif;
