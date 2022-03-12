@@ -61,22 +61,17 @@ export const BookImage = styled.div`
   /* padding-left: 130px;
   padding-top: 96px; */
   width: 650px;
-  height: 600px;
+  height: 85vw;
   margin-left: 130px;
   background: url(${Robbie});
-  background-position: center;
-  background-size: cover;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
   img {
     position: absolute;
-  }
-  /* img:nth-child(1) {
-    width: 100vw;
-    min-width: 675px;
-    max-width: 700px;
-  } */
-  img:nth-child(1) {
     bottom: 0;
   }
+
   @media screen and (max-width: 1000px) {
     margin-left: 50px;
   }
@@ -85,21 +80,18 @@ export const BookImage = styled.div`
     min-width: 675px;
     max-width: 700px;
     margin: 0;
-    img:nth-child(1) {
+    img {
       bottom: 0;
-      left: 20px;
+      left: 10%;
+      transform: translate(14%);
     }
-    /* img:nth-child(1) {
-      width: 100vw;
-      min-width: 450px;
-      max-width: 700px;
-    } */
   }
   @media screen and (max-width: 440px) {
-    img:nth-child(2) {
+    img {
       bottom: 0;
       left: 22%;
       transform: translate(4%);
+      width: 200px;
     }
   }
 `
