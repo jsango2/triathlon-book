@@ -181,6 +181,8 @@ export const Text = styled.div`
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
+    font-size: 15px;
+
     text-align: center;
   }
 `

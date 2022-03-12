@@ -100,6 +100,8 @@ export const Title = styled.h1`
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
+    font-size: 30px;
+
     text-align: center;
   }
 `
@@ -118,6 +120,9 @@ export const Text = styled.p`
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
+    font-size: 15px;
+    line-height: 20px;
+
     text-align: center;
   }
 `

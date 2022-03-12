@@ -55,9 +55,7 @@ export const Title = styled.h1`
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 700px) {
-    /* padding-left: 30px; */
-    /* order: 1;
-    margin-bottom: 1rem; */
+    font-size: 22px;
   }
 `
 export const SubTitle = styled.p`
@@ -78,6 +76,8 @@ export const SubTitle = styled.p`
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
+    font-size: 14px;
+
     margin-top: 45px;
     margin-bottom: 25px;
     width: 80%;
@@ -126,6 +126,8 @@ export const Copyright = styled.div`
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
+    font-size: 14px;
+
     width: 85%;
   }
 `

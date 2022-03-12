@@ -82,6 +82,8 @@ export const Text = styled.div`
 
   color: #2c2738;
   @media screen and (max-width: 750px) {
+    font-size: 15px;
+
     width: 80%;
   }
 `
