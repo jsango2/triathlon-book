@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Robbie from "../../../content/assets/Robbie.png"
 
 export const WrapFormSection = styled.div`
   position: relative;
@@ -62,15 +63,18 @@ export const BookImage = styled.div`
   width: 650px;
   height: 600px;
   margin-left: 130px;
+  background: url(${Robbie});
+  background-position: center;
+  background-size: cover;
   img {
     position: absolute;
   }
-  img:nth-child(1) {
+  /* img:nth-child(1) {
     width: 100vw;
     min-width: 675px;
     max-width: 700px;
-  }
-  img:nth-child(2) {
+  } */
+  img:nth-child(1) {
     bottom: 0;
   }
   @media screen and (max-width: 1000px) {
@@ -81,10 +85,15 @@ export const BookImage = styled.div`
     min-width: 675px;
     max-width: 700px;
     margin: 0;
-    img:nth-child(2) {
+    img:nth-child(1) {
       bottom: 0;
       left: 20px;
     }
+    /* img:nth-child(1) {
+      width: 100vw;
+      min-width: 450px;
+      max-width: 700px;
+    } */
   }
   @media screen and (max-width: 440px) {
     img:nth-child(2) {

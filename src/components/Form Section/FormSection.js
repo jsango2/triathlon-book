@@ -58,7 +58,7 @@ const FormSection = () => {
           </SocialWrap>
         </WrapText>{" "}
         <BookImage>
-          <img src={Robbie} alt="Robbie" width="650px" />
+          {/* <img src={Robbie} alt="Robbie" /> */}
           <img src={Potpis} alt="Robbie" width="250px" />
         </BookImage>
       </WrapContent>
