@@ -383,6 +383,12 @@ a:focus {
 .slide-from-right-hero-start div:nth-child(3) {
   right: 54px;
 } */
+.slide-from-right-hero-start {
+  opacity: 0;
+}
+.slide-from-right-hero div:nth-child(2) {
+  opacity: 1;
+}
 .slide-from-right-hero div:nth-child(2) {
   -webkit-animation: hero-slide 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: hero-slide 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -395,6 +401,9 @@ a:focus {
   0% {
     right: 27px;
   }
+  5% {
+    opacity: 1;
+  }
   100% {
     right: 58px;
   }
@@ -402,6 +411,9 @@ a:focus {
 @keyframes hero-slide {
   0% {
     right: 27px;
+  }
+  5% {
+    opacity: 1;
   }
   100% {
     right: 58px;
@@ -411,6 +423,9 @@ a:focus {
   0% {
     right: 60px;
   }
+  5% {
+    opacity: 1;
+  }
   100% {
     right: 117px;
   }
@@ -418,6 +433,9 @@ a:focus {
 @keyframes hero-slide2 {
   0% {
     right: 60px;
+  }
+  5% {
+    opacity: 1;
   }
   100% {
     right: 117px;
