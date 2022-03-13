@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ref } from "react"
 import Navbar from "../Navigation/navbar"
 import {
   HeroWrap,
@@ -10,16 +10,28 @@ import {
   Button,
   Line,
   LineUnderTitle,
+  WrapBook3,
+  WrapBook2,
+  WrapBook1,
 } from "./styles.js"
-import Book from "../../../content/assets/HeroBook.png"
+import Book1 from "../../../content/assets/oneBook.png"
+
 import Cart from "../../../content/assets/cart.svg"
 import { Link as Veza } from "react-scroll"
 import useWindowSize from "../helper/usewindowsize"
+import { useInView } from "react-intersection-observer"
 
 const Hero = () => {
   const size = useWindowSize()
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.4,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+  console.log(inView)
   return (
-    <HeroWrap>
+    <HeroWrap ref={ref}>
       <Navbar />
       <WrapContent>
         <WrapText>
@@ -56,8 +68,20 @@ const Hero = () => {
             </Button>
           )}
         </WrapText>
-        <BookImage>
-          <img src={Book} alt="Book" width="488px" />
+        <BookImage
+          className={`slide-hero ${
+            inView ? "slide-from-right-hero" : "slide-from-right-hero-start"
+          }`}
+        >
+          <WrapBook3>
+            <img src={Book1} alt="Book" width="300px" />
+          </WrapBook3>
+          <WrapBook2>
+            <img src={Book1} alt="Book" width="280px" />
+          </WrapBook2>
+          <WrapBook1>
+            <img src={Book1} alt="Book" width="260px" />
+          </WrapBook1>
         </BookImage>
       </WrapContent>
     </HeroWrap>

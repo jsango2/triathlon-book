@@ -29,6 +29,8 @@ export const WrapContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 1s ease-out;
+
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 1000px) {
@@ -62,6 +64,7 @@ export const WrapText = styled.div`
 export const BookImage = styled.div`
   position: relative;
   z-index: 2;
+  transition: all 1s ease-out;
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 440px) {

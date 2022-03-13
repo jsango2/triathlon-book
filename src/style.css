@@ -326,3 +326,100 @@ a:focus {
     bottom: px !important;
   }
 } */
+.slide-hero {
+  transition: all 1s ease-out;
+}
+.slide-prices {
+  transition: all 1s ease-out;
+  opacity: 0;
+}
+.slide-from-right div:nth-child(4) {
+  animation-delay: 0.3s;
+  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.slide-from-right-start div:nth-child(4) {
+  opacity: 0;
+}
+.slide-from-right-start div:nth-child(3) {
+  opacity: 0;
+}
+.slide-from-right-start div:nth-child(2) {
+  opacity: 0;
+}
+.slide-from-right div:nth-child(3) {
+  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+    0.3s both;
+  animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
+}
+.slide-from-right div:nth-child(2) {
+  -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+    0.6s both;
+  animation: scale-up-hor-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.6s both;
+}
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    opacity: 0;
+    /* -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%; */
+  }
+  100% {
+    -webkit-transform: translate(10%);
+    opacity: 1;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* .slide-from-right-hero-start div:nth-child(2) {
+  right: 27px;
+}
+.slide-from-right-hero-start div:nth-child(3) {
+  right: 54px;
+} */
+.slide-from-right-hero div:nth-child(2) {
+  -webkit-animation: hero-slide 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: hero-slide 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.slide-from-right-hero div:nth-child(3) {
+  -webkit-animation: hero-slide2 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: hero-slide2 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes hero-slide {
+  0% {
+    right: 27px;
+  }
+  100% {
+    right: 58px;
+  }
+}
+@keyframes hero-slide {
+  0% {
+    right: 27px;
+  }
+  100% {
+    right: 58px;
+  }
+}
+@-webkit-keyframes hero-slide2 {
+  0% {
+    right: 60px;
+  }
+  100% {
+    right: 117px;
+  }
+}
+@keyframes hero-slide2 {
+  0% {
+    right: 60px;
+  }
+  100% {
+    right: 117px;
+  }
+}

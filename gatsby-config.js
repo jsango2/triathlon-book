@@ -17,13 +17,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/blog`,
-    //     name: `blog`,
-    //   },
-    // },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -88,36 +82,7 @@ module.exports = {
         name: `locale`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-react-i18next`,
-    //   options: {
-    //     localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-    //     languages: [`en`, `hr`],
-    //     defaultLanguage: `hr`,
 
-    //     // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-    //     siteUrl: `https://example.com/`,
-    //     // you can pass any i18next options
-    //     i18nextOptions: {
-    //       interpolation: {
-    //         escapeValue: false, // not needed for react as it escapes by default
-    //       },
-    //       keySeparator: false,
-    //       nsSeparator: false,
-    //     },
-    //     pages: [
-    //       {
-    //         matchPath: "/:lang?",
-    //         getLanguageFromPath: false,
-    //         // excludeLanguages: ["es"],
-    //       },
-    //       {
-    //         matchPath: "/preview",
-    //         languages: ["en", "hr"],
-    //       },
-    //     ],
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -125,16 +90,10 @@ module.exports = {
         short_name: `From triathlon to decision making`,
         start_url: `/`,
         background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/icon.svg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

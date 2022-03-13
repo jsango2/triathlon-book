@@ -61,7 +61,7 @@ export const BookImage = styled.div`
   /* padding-left: 130px;
   padding-top: 96px; */
   width: 650px;
-  height: 85vw;
+  height: 600px;
   margin-left: 130px;
   background: url(${Robbie});
   background-position: top center;
@@ -76,6 +76,8 @@ export const BookImage = styled.div`
     margin-left: 50px;
   }
   @media screen and (max-width: 750px) {
+    height: 85vw;
+
     width: 100vw;
     min-width: 675px;
     max-width: 700px;

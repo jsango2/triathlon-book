@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ref } from "react"
 import {
   PriceWrap,
   WrapContent,
@@ -17,14 +17,26 @@ import Cart from "../../../content/assets/cart.svg"
 import PriceBox from "./priceBox"
 import { Link as Veza } from "react-scroll"
 import useWindowSize from "../helper/usewindowsize"
+import { useInView } from "react-intersection-observer"
 
 const Price = () => {
   const size = useWindowSize()
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: size.width < 750 ? 0.4 : 0.8,
+    // trigger inView function only once
+    triggerOnce: true,
+  })
+  console.log(inView)
   return (
-    <PriceWrap>
+    <PriceWrap ref={ref}>
       <WrapContent>
         {" "}
-        <BookImage>
+        <BookImage
+          className={`${
+            inView ? "slide-from-right" : "slide-from-right-start"
+          }`}
+        >
           <img src={Book} alt="Book" width="700px" />
           <PriceBox text="EUR 19.99" bottom="14px" right="50px" />
           <PriceBox text="GBP 14.99" bottom="74px" right="75px" />

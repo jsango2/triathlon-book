@@ -53,12 +53,53 @@ export const WrapText = styled.div`
 `
 export const BookImage = styled.div`
   position: relative;
+  width: 420px;
+  height: 550px;
+
+  img {
+    -webkit-box-shadow: -3px 5px 15px 5px rgba(0, 0, 0, 0.31);
+    box-shadow: -3px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  }
 
   /* padding-left: 130px;
   padding-top: 96px; */
   @media screen and (max-width: 750px) {
+    width: 281px;
+    height: 350px;
+  }
+`
+export const WrapBook3 = styled.div`
+  position: absolute;
+  z-index: 3;
+  top: -6px;
+  right: 0;
+  /* padding-left: 130px;
+  padding-top: 96px; */
+  @media screen and (max-width: 750px) {
     img {
-      width: 330px;
+      max-width: 220px;
+    }
+  }
+`
+export const WrapBook2 = styled.div`
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  right: 83px;
+  @media screen and (max-width: 750px) {
+    img {
+      max-width: 190px;
+    }
+  }
+`
+export const WrapBook1 = styled.div`
+  position: absolute;
+  z-index: 1;
+  top: 32px;
+  right: 160px;
+  @media screen and (max-width: 750px) {
+    img {
+      max-width: 160px;
     }
   }
 `
