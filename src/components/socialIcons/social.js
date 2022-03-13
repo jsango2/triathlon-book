@@ -15,7 +15,7 @@ const SocialComp = () => {
       <a href="https://instagram.com/tri_robbie?utm_medium=copy_link">
         <img src={Ig} alt="Instagram" width="25px" />
       </a>
-      <a href="ttps://www.linkedin.com/in/carfagno6471/?originalSubdomain=sg">
+      <a href="https://www.linkedin.com/in/carfagno6471/">
         {" "}
         <img src={Ln} alt="Linkedin" width="25px" />
       </a>
