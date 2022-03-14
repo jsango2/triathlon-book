@@ -90,7 +90,7 @@ export const BookImage = styled.div`
   }
   @media screen and (max-width: 440px) {
     img {
-      bottom: 0;
+      bottom: -8px;
       left: 22%;
       transform: translate(4%);
       width: 200px;
@@ -303,6 +303,18 @@ export const SocialWrap = styled.div`
   @media screen and (max-width: 750px) {
     display: flex;
     justify-content: center;
+  }
+`
+export const WrapStrelice = styled.div`
+  height: 163px;
+  width: 245px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 70px;
+  @media screen and (max-width: 750px) {
+    right: 179px;
+    bottom: 9px;
   }
 `
 export const Superman = styled.div`

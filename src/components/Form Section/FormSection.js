@@ -12,10 +12,12 @@ import {
   SupermanMobile,
   FormTitleMobile,
   Button,
+  WrapStrelice,
 } from "./styles.js"
 import Robbie from "../../../content/assets/Robbie.png"
 
 import Potpis from "../../../content/assets/potpis.svg"
+import Strelice from "../../../content/assets/streliceLijevo.svg"
 import KnjigaForm from "../../../content/assets/KnjigaForm.png"
 import Form from "./Form"
 import SUperman from "../../../content/assets/FATMAN.svg"
@@ -60,6 +62,9 @@ const FormSection = () => {
         <BookImage>
           {/* <img src={Robbie} alt="Robbie" /> */}
           <img src={Potpis} alt="Robbie" width="250px" />
+          <WrapStrelice>
+            <img src={Strelice} alt="strelice" width="250px" />
+          </WrapStrelice>
         </BookImage>
       </WrapContent>
       <SupermanMobile id="orderMobile">
