@@ -36,8 +36,7 @@ const Hero = () => {
       <WrapContent>
         <WrapText>
           <Title>
-            <Line />
-            Story about business and sport
+            <Line />A Story About Success In Business and Sport
           </Title>
           <LineUnderTitle />
           <Text>
@@ -45,7 +44,7 @@ const Hero = () => {
             practices of triathlon training and how they positively impact the
             business processes. Not taking anything for granted, he
             conceptualized a method that will lead you through simple steps in
-            order to inprove your sales and your overall life standard.{" "}
+            order to improve your sales and your overall life standard.{" "}
           </Text>
           {size.width > 750 ? (
             <Veza

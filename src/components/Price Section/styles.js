@@ -104,7 +104,7 @@ export const BoxWrap = styled.div`
 
   height: 43px;
   width: 234px;
-  background: #c70000;
+  background: #890505;
   /* Material Design/04 dp */
 
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12),

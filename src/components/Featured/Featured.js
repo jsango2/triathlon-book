@@ -32,13 +32,13 @@ const Featured = () => {
           Challenges make us explore the limits of our comfort zone and confront
           us with our fears. Overcoming these fears and achieving what once
           appeared impossible will inspire confidence, determination, and peace
-          of mind. And like most things in life, the harder things have the
-          greater reward. <br />
+          of mind. And like most things in life, the harder things are, the
+          greater the reward. <br />
           <br /> In my career as both triathlete and top sales manager I was
           lucky enough to share trainings and moments with top sales performers,
           meet world champions and chat with athletes of all age groups. I
           gathered all this knowledge to present it to you in a simple and funny
-          way in this book.
+          way.
         </Text>
         <WrapBook>
           <img src={FeaturedBook} alt="featured book" />

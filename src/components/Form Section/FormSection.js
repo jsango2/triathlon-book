@@ -41,8 +41,8 @@ const FormSection = () => {
             parents, Roberto Carfagno left home at the age of 19 to explore the
             world. He studied in the USA and then Italy where he lived for 10
             years before moving to Asia. Triathlon crossed his path at the age
-            of 42, and he managed to qualify for the Ironman
-            Worldchamiopnship in Kona, Hawai'i starting from as an un-sportive
+            of 42, and he managed to qualify for the Ironman World
+            chamiopnship in Kona, Hawai'i starting from as an unathletic
             endurance background as can be. This same daring attitude helped him
             to be a successful sales director for a Swiss telecom company coming
             from a completely different background. He went on to successfully

@@ -10,7 +10,11 @@ const Form = () => {
       </Superman>
       <TextBox>
         <FormTitle>Contact us / Order book</FormTitle>
-        <SubTitle>In general, we reply within 24-28 hours.</SubTitle>
+        <SubTitle>
+          We’re always happy to hear from you, about your experience and your
+          feedback. Fill in the form below to let us know what we can do for
+          you.
+        </SubTitle>
         <form
           name="contact"
           data-netlify="true"
