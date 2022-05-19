@@ -70,9 +70,10 @@ export const StopwatchWrap = styled.div`
     display: none;
   }
 `
-export const Text = styled.div`
+export const Text = styled.a`
   position: absolute;
-  z-index: 1;
+  cursor: pointer;
+  z-index: 5;
   bottom: 64px;
   right: 37%;
   width: 305px;

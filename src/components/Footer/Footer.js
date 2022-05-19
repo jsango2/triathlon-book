@@ -25,7 +25,14 @@ const Footer = () => {
         <Divider />
         <Copyright>
           © 2022 BEYOND THE METHOD / All Rights Reserved / Web design{" "}
-          <strong>SUTRA</strong>
+          <strong>
+            <a
+              style={{ textDecoration: "none", color: "white" }}
+              href="https://www.sutra.hr"
+            >
+              SUTRA
+            </a>{" "}
+          </strong>
         </Copyright>
       </ContentWrap>
     </FooterWrap>

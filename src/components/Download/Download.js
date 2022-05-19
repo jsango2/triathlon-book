@@ -12,6 +12,7 @@ import {
 import Knjiga from "../../../content/assets/knjiga2.png"
 import Ornament from "../../../content/assets/OrnamentDownload.svg"
 import Stopwatch from "../../../content/assets/PenjanjeStoperica.svg"
+import downloadPdf from "../../../content/assets/donloadPdf.pdf"
 
 const Download = () => {
   return (
@@ -26,7 +27,7 @@ const Download = () => {
       <StopwatchWrap>
         <img src={Stopwatch} alt="book2" width={479} />
       </StopwatchWrap>
-      <Text>
+      <Text href={downloadPdf} download>
         <Title>DOWNLOAD FREE BONUS MATERIALS</Title>
         <Paragraph>ART Training Schedule for Sprint Beginners</Paragraph>
       </Text>
