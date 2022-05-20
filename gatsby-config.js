@@ -9,7 +9,7 @@ module.exports = {
     },
     description: `Over a long and fruitful business career, Roberto has explored the
     practices of triathlon training and how they positively impact the
-    business processes.`,
+    business processes. Not taking anything for granted, he conceptualized a method that will lead you through simple steps in order to improve your sales and your overall life standard.`,
     siteUrl: `https://localhost:8003/`,
     social: {
       twitter: `Triathlon book`,
